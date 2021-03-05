@@ -21,6 +21,11 @@ class CalculadoraTests {
     }
 
     @Test
+    public void notSumWithNumberNull() {
+
+    }
+
+    @Test
     public void less() {
         //Cenario
         Calculadora calc = new Calculadora();
