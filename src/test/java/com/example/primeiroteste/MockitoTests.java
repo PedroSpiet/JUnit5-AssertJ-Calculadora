@@ -12,10 +12,11 @@ import java.util.List;
 @SpringBootTest
 public class MockitoTests {
 
+    @Mock
+    List<String> lista;
+
     @Test
     void meuPrimeiroMock() {
-        List<String> lista = Mockito.mock(ArrayList.class);
-
         Mockito.when(lista.size()).thenReturn(20);
         int size = lista.size();
         Assertions.assertThat(size).isEqualTo(20);
